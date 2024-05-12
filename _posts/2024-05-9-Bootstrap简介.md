@@ -1,11 +1,12 @@
 ---
 layout: post
-author: jill
+author: ted
 ---
 <div class="container">
   <div class="jumbotron">
     <h1>我的第一个 Bootstrap 页面</h1>
     <p>重置窗口大小，查看响应式效果！</p> 
+    <img src="/assets/images/背景2.jpeg" alt="描述性文本" class="img-responsive">
   </div>
   <div class="row">
     <div class="col-sm-4">

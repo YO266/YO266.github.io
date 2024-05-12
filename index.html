@@ -2,6 +2,16 @@
 layout: default
 title: Home
 ---
+<head>
+  <style>
+    /* 设置背景图片 */
+    body {
+      background-image: url('/assets/images/背景.jpeg'); 
+      background-size: cover
+
+    }
+  </style>
+</head>
 
 <style>
   /* 居中文本 */
@@ -10,7 +20,9 @@ title: Home
   }
   /* 修改标题样式 */
   h1 {
-    color: rgb(14, 3, 21); 
+    color: rgb(65, 9, 100); 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px; /* 这里是增大字体大小的地方 */
   }
 </style>
 
@@ -41,10 +53,10 @@ title: Home
 </script>
 
 <!-- 居中显示的标题 -->
-<h1 style="color:rgb(9, 9, 14);">{{ "Hello World!" | downcase }}</h1>
+<h1>{{ "Hello World!" | downcase }}</h1>
 
 <!-- 居中显示的欢迎信息 -->
-<h1 style="color:rgb(227, 58, 148);">欢迎来到我的博客！</h1>
+<h1 style="color:rgb(202, 54, 140);">欢迎来到我的博客！</h1>
 
 <!-- 实时时间 -->
-<div id="real-time" style="font-size: 36px; color: rgb(92, 17, 44);"></div>
+<div id="real-time" style="font-size: 36px; color: rgb(90, 17, 71);"></div>

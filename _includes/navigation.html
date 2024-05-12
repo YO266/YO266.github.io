@@ -1,5 +1,24 @@
+<style>
+  .btn {
+    padding: 10px; /* 调整按钮的内边距 */
+    border-radius: 5px; /* 添加圆角 */
+    border: 2px solid #0c020d; /* 添加边框 */
+    background-color: transparent; /* 使按钮背景透明 */
+    color: #156344; /* 按钮文字颜色 */
+    font-size: 16px; /* 调整文字大小 */
+    text-decoration: none; /* 移除文字下划线 */
+    transition: all 0.3s ease; /* 添加过渡效果 */
+  }
+
+  .btn:hover {
+    background-color: #bcecef; /* 悬停时修改背景颜色 */
+    color: white; /* 悬停时修改文字颜色 */
+  }
+</style>
+
+
 <div class="btn-group btn-group-justified">
   {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" class="btn btn-danger">{{ item.name }}</a>
+    <a href="{{ item.link }}" class="btn">{{ item.name }}</a>
   {% endfor %}
 </div>

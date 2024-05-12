@@ -1,3 +1,7 @@
+---
+layout: post
+author: jill
+---
 <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid"> 
     <div class="navbar-header">
