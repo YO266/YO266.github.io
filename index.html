@@ -2,6 +2,49 @@
 layout: default
 title: Home
 ---
-<h1>{{ "Hello World!" | downcase }}</h1>
 
-<h1>欢迎来到我的博客！</h1>
+<style>
+  /* 居中文本 */
+  body {
+    text-align: center;
+  }
+  /* 修改标题样式 */
+  h1 {
+    color: rgb(14, 3, 21); 
+  }
+</style>
+
+<!-- 使用 JavaScript 实时更新时间 -->
+<script>
+  // 更新时间函数
+  function updateTime() {
+    var now = new Date();
+    var hours = now.getHours();
+    var minutes = now.getMinutes();
+    var seconds = now.getSeconds();
+    // 格式化时间
+    var timeString = padZero(hours) + ":" + padZero(minutes) + ":" + padZero(seconds);
+    // 更新页面上的时间
+    document.getElementById('real-time').innerText = timeString;
+  }
+
+  // 补零函数
+  function padZero(num) {
+    return (num < 10 ? '0' : '') + num;
+  }
+
+  // 页面加载完成后开始更新时间
+  window.onload = function() {
+    updateTime(); // 首次更新时间
+    setInterval(updateTime, 1000); // 每秒更新一次时间
+  };
+</script>
+
+<!-- 居中显示的标题 -->
+<h1 style="color:rgb(9, 9, 14);">{{ "Hello World!" | downcase }}</h1>
+
+<!-- 居中显示的欢迎信息 -->
+<h1 style="color:rgb(227, 58, 148);">欢迎来到我的博客！</h1>
+
+<!-- 实时时间 -->
+<div id="real-time" style="font-size: 36px; color: rgb(92, 17, 44);"></div>
