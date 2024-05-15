@@ -19,5 +19,5 @@ This page tells you a little bit about me
 </style>
 
 <!-- 图片 -->
-<img src="/assets/images/背景3.jpeg"  class="full-width-image">
+<img src="/assets/images/背景0.jpeg"  class="full-width-image">
 
