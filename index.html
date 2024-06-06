@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+    <script src="https://cdn.staticfile.net/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <style>
+  .btn {
+    padding: 10px; /* 调整按钮的内边距 */
+    border-radius: 5px; /* 添加圆角 */
+    border: 2px solid #0c020d; /* 添加边框 */
+    background-color: transparent; /* 使按钮背景透明 */
+    color: #156344; /* 按钮文字颜色 */
+    font-size: 16px; /* 调整文字大小 */
+    text-decoration: none; /* 移除文字下划线 */
+    transition: all 0.3s ease; /* 添加过渡效果 */
+  }
+
+  .btn:hover {
+    background-color: #bcecef; /* 悬停时修改背景颜色 */
+    color: white; /* 悬停时修改文字颜色 */
+  }
+</style>
+
+
+<div class="btn-group btn-group-justified">
+  
+    <a href="/" class="btn">Home</a>
+  
+    <a href="/about.html" class="btn">About</a>
+  
+    <a href="/blog.html" class="btn">Blog</a>
+  
+    <a href="/staff.html" class="btn">Staff</a>
+  
+</div>
+    <head>
+  <style>
+    /* 设置背景图片 */
+    body {
+      background-image: url('/assets/images/背景.jpeg'); 
+      background-size: cover
+
+    }
+  </style>
+</head>
+
+<style>
+  /* 居中文本 */
+  body {
+    text-align: center;
+  }
+  /* 修改标题样式 */
+  h1 {
+    color: rgb(65, 9, 100); 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px; /* 这里是增大字体大小的地方 */
+  }
+</style>
+
+<!-- 使用 JavaScript 实时更新时间 -->
+<script>
+  // 更新时间函数
+  function updateTime() {
+    var now = new Date();
+    var hours = now.getHours();
+    var minutes = now.getMinutes();
+    var seconds = now.getSeconds();
+    // 格式化时间
+    var timeString = padZero(hours) + ":" + padZero(minutes) + ":" + padZero(seconds);
+    // 更新页面上的时间
+    document.getElementById('real-time').innerText = timeString;
+  }
+
+  // 补零函数
+  function padZero(num) {
+    return (num < 10 ? '0' : '') + num;
+  }
+
+  // 页面加载完成后开始更新时间
+  window.onload = function() {
+    updateTime(); // 首次更新时间
+    setInterval(updateTime, 1000); // 每秒更新一次时间
+  };
+</script>
+
+<!-- 居中显示的标题 -->
+<h1>hello world!</h1>
+
+<!-- 居中显示的欢迎信息 -->
+<h1 style="color:rgb(202, 54, 140);">欢迎来到我的博客！</h1>
+
+<!-- 实时时间 -->
+<div id="real-time" style="font-size: 36px; color: rgb(90, 17, 71);"></div>
+  </body>
+</html>
